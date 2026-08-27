@@ -61,8 +61,8 @@ export default function Iphone({ showHotspots = false }: ProductProps) {
 )
 
  
-  const { nodes, materials } = useGLTF('/free_iphone_13_pro_2021.glb') as unknown as GLTFResult
-
+  const { nodes, materials } = useGLTF('/free_iphone_13_pro_2021.glb') as GLTFResult
+console.log(nodes)
 
 const displayMaterials = useMemo(() => ({
   normal: materials.Display,
